@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoFood</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            background-color: #71d871;
+        }
+
+        .navbar h1 {
+            color: white;
+            text-shadow: 1px 1px #ffffff;
+        }
+
+        .navbar-menu {
+            display: flex;
+            gap: 25px;
+        }
+
+        .navbar-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .navbar-menu h3,
+        .navbar-buttons input[type="button"] {
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 9px;
+        }
+
+        .navbar-buttons input[type="button"] {
+            background-color: rgb(255, 255, 255);
+            color: #71d871;
+        }
+
+        .navbar-buttons input[type="button"]:hover {
+            background-color: rgb(85, 163, 85);
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar-menu {
+                flex-direction: column;
+                display: none;
+            }
+
+            .navbar-menu.active {
+                display: flex;
+            }
+
+            .navbar-buttons {
+                flex-direction: column;
+            }
+        }
+
+        .lowerdiv {
+            height: 125vh;
+            background-color: #080808;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .lowerdiv img {
+            width: 100%;
+            /* This will stretch the image to fill the div */
+            height: 75vh;
+            /* This will maintain the aspect ratio of the image */
+            opacity: 0.4;
+            /* This will decrease the opacity of the image to 50% */
+        }
+       .gridmenu{
+           display: grid;
+           grid-template-columns: 25% 25% 25% ;
+           grid-template-rows: 45% 45%;
+           grid-column-gap: auto;
+       }
+         .box1{
+              
+              border: #71d871;
+              border-radius: 10px;
+              
+         }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>GoFood</h1>
+        <div class="navbar-menu" id="navbar-menu">
+            <h3>HOME</h3>
+            <h3>MENU</h3>
+            <h3>ABOUT</h3>
+            <h3>CONTACT</h3>
+        </div>
+        <div class="navbar-buttons">
+            <input type="button" name="LOGIN" value="LOGIN">
+            <input type="button" name="REGISTER" value="REGISTER">
+        </div>
+    </div>
+    <div class="lowerdiv">
+        <img
+            src="https://img.freepik.com/premium-photo/three-juicy-homemade-beef-cheeseburger-wooden-board-assortment-burgers-with-beef-cheese-dark_147620-1663.jpg?w=740">
+
+            
+
+    </div>
+    <div class="gridmenu">
+        <div class="box1">
+            <img
+            src="https://th.bing.com/th/id/R.445bec9bb0110ab5d957bf3311135ab6?rik=2nfI7IPob%2b1IGg&pid=ImgRaw&r=0" style="width: 99%;">
+            <br> 
+            
+
+        </div>
+        <div class="box1">
+            <img
+            src="https://th.bing.com/th/id/R.445bec9bb0110ab5d957bf3311135ab6?rik=2nfI7IPob%2b1IGg&pid=ImgRaw&r=0" style="width: 99%;">
+            <br> 
+            
+
+        </div>
+        <div class="box1">
+            <img
+            src="https://th.bing.com/th/id/R.445bec9bb0110ab5d957bf3311135ab6?rik=2nfI7IPob%2b1IGg&pid=ImgRaw&r=0" style="width: 99%;">
+            <br> 
+            
+
+        </div>
+        <div class="box1">
+            <img
+            src="https://th.bing.com/th/id/R.445bec9bb0110ab5d957bf3311135ab6?rik=2nfI7IPob%2b1IGg&pid=ImgRaw&r=0" style="width: 99%;">
+            <br> 
+            
+
+        </div>
+
+    </div>
+</body>
+
+</html>
